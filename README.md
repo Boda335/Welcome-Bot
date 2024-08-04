@@ -71,19 +71,27 @@ Add a custom button to the welcome message.
 
 ### Setting the Welcome Channel
 
-![Set Channel Example](path/to/set_channel_example.png)
+<div style="text-align: center;">
+  <img src="https://d.top4top.io/p_313894f7r2.png" alt="Welcome Channe" >
+</div>
 
 ### Setting Roles
 
-![Set Roles Example](path/to/set_roles_example.png)
+<div style="text-align: center;">
+  <img src="https://e.top4top.io/p_3138rinq03.png" alt="Setting Roles" >
+</div>
 
 ### Adding a Custom Button
 
-![Add Button Example](path/to/add_button_example.png)
+<div style="text-align: center;">
+  <img src="https://c.top4top.io/p_3138zbacr1.png" alt="Custom Button" >
+</div>
 
 ### Welcome Message
 
-![Welcome Message Example](path/to/welcome_message_example.png)
+<div style="text-align: center;">
+  <img src="https://f.top4top.io/p_3138rbwzg4.png" alt="Welcome Message" >
+</div>
 
 ## Code Explanation
 
