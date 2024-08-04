@@ -1,6 +1,6 @@
 
 # Welcome Bot
-
+s
 WelcomeBot is a feature-rich Discord bot designed to enhance your server's welcome experience. It greets new members, assigns roles automatically, and allows server administrators to customize welcome messages with buttons and embeds.
 
 ## Features
