@@ -58,18 +58,15 @@ def overlay_avatar_on_image(background_path, avatar_url, avatar_size=100, positi
         position = ((background.size[0] - avatar_size) // 2, (background.size[1] - avatar_size) // 2)
     background.paste(avatar, position, avatar)
     return background
-
 def check_admin_permissions(interaction: discord.Interaction):
     return any(role.permissions.administrator for role in interaction.user.roles)
 def premium_command(func):
     func.is_premium = True
-    register_command_status(func.__name__, "✔️", premium=True)  # تسجيل الأمر كبريميوم
+    register_command_status(func.__name__, "✔️", premium=True)
     return func
-
-# ديكوريتور لتحديد الأوامر العادية وتسجيلها
 def regular_command(func):
     func.is_premium = False
-    register_command_status(func.__name__, "✔️")  # تسجيل الأمر كعادي
+    register_command_status(func.__name__, "✔️")
     return func
 
 @client.event
@@ -159,8 +156,6 @@ async def on_member_join(member):
             role = member.guild.get_role(bot_role_id) if member.bot else member.guild.get_role(member_role_id)
             if role:
                 await member.add_roles(role)
-            
-            # Fetch the current invites
             new_invites = await member.guild.invites()
             used_invite = None
             for invite in new_invites:
@@ -205,8 +200,6 @@ async def on_member_join(member):
 
             # Send the embed to the welcome channel
             await welcome_channel.send(content=f"{member.mention}", embeds=[welcome_embed], view=view, files=[image_url])
-
-            # Send the embed to the new member via DM
             try:
                 await member.send(embed=welcome_embed, view=view, files=[image_url])
             except discord.Forbidden:
