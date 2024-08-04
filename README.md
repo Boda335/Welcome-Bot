@@ -14,11 +14,11 @@ WelcomeBot is a feature-rich Discord bot designed to enhance your server's welco
 
 1. Clone this repository:
     ```sh
-    git clone https://github.com/your-username/WelcomeBot.git
+    git clone https://github.com/Boda335/Welcome-Bot.git
     ```
 2. Navigate to the project directory:
     ```sh
-    cd WelcomeBot
+    cd Welcome-Bot
     ```
 3. Install the required dependencies:
     ```sh
