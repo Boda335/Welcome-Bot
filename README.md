@@ -1,82 +1,107 @@
-# Welcome-Bot
 
-## Overview
+# Welcome Bot
 
-This Discord bot is designed to enhance server management with features such as setting welcome channels, managing roles, and adding custom buttons to welcome messages. It also includes functionality to overlay user avatars on images and send personalized welcome messages.
+WelcomeBot is a feature-rich Discord bot designed to enhance your server's welcome experience. It greets new members, assigns roles automatically, and allows server administrators to customize welcome messages with buttons and embeds.
 
 ## Features
 
-- **Welcome Channel Setup**: Configure a welcome channel for new members.
-- **Role Assignment**: Automatically assign roles to new members and bots.
-- **Custom Buttons**: Add up to 3 custom buttons to welcome messages.
-- **Avatar Overlay**: Overlay user avatars on a background image.
-- **Personalized Welcome Messages**: Send customized welcome messages with embed and buttons.
-
-## Requirements
-
-- Python 3.8 or higher
-- `discord.py` library
-- `Pillow` library
-- `requests` library
+- **Welcome Messages:** Send personalized welcome messages to new members.
+- **Auto Role Assignment:** Automatically assign roles to new members and bots.
+- **Custom Buttons:** Add up to 3 custom buttons to the welcome message.
+- **Invite Tracking:** Track who invited new members to your server.
 
 ## Installation
 
-1. **Clone the Repository**:
+1. Clone this repository:
+    ```sh
+    git clone https://github.com/your-username/WelcomeBot.git
+    ```
+2. Navigate to the project directory:
+    ```sh
+    cd WelcomeBot
+    ```
+3. Install the required dependencies:
+    ```sh
+    pip install -r requirements.txt
+    ```
 
-   ```bash
-   git clone https://github.com/your-repo-url.git
-   ```
+## Configuration
 
-2. **Navigate to the Project Directory**:
+1. Create a `config.json` file in the root directory with your bot token:
+    ```json
+    {
+        "token": "YOUR_DISCORD_BOT_TOKEN"
+    }
+    ```
+2. Run the bot:
+    ```sh
+    python bot.py
+    ```
 
-   ```bash
-   cd your-repo-directory
-   ```
+## Commands
 
-3. **Install Dependencies**:
+### `/set_channel`
 
-   ```bash
-   pip install discord.py pillow requests
-   ```
+Set the welcome channel for the server.
 
-4. **Configure Your Bot**:
+**Usage:**
+```sh
+/set_channel <channel>
+```
 
-   - Replace `"Token Here"` in `client.run("Token Here")` with your bot's token.
-   - Ensure that `guild_data.json` and `bg/welcome_image.png` are in the correct paths.
+### `/set_roles`
 
-## Usage
+Set the auto roles for bots and members.
 
-1. **Run the Bot**:
+**Usage:**
+```sh
+/set_roles <bot_role> <member_role>
+```
 
-   ```bash
-   python your_bot_file.py
-   ```
+### `/add_button`
 
-2. **Commands**:
+Add a custom button to the welcome message.
 
-   - `/set_channel <channel>`: Set the welcome channel for the server.
-   - `/set_roles <bot_role> <member_role>`: Set roles for bots and members.
-   - `/add_button <label> <url> <emoji>`: Add a custom button to the welcome message.
+**Usage:**
+```sh
+/add_button <label> <url> <emoji>
+```
 
-   Ensure you have administrative permissions to use these commands.
+## Example Usage
 
-## How It Works
+### Setting the Welcome Channel
 
-- **`on_ready` Event**: Logs bot's status and refreshes application commands.
-- **`on_member_join` Event**: Sends a personalized welcome message to new members, including their avatar overlaid on a background image, and assigns roles based on their type (bot or member).
+![Set Channel Example](path/to/set_channel_example.png)
 
-## File Structure
+### Setting Roles
 
-- `your_bot_file.py`: Main bot script.
-- `guild_data.json`: Stores guild-specific settings.
-- `bg/welcome_image.png`: Background image for overlaying avatars.
+![Set Roles Example](path/to/set_roles_example.png)
 
-## Support
+### Adding a Custom Button
 
-For any issues or questions, please reach out via [Discord Server](https://discord.gg/DzjuTABN6E).
+![Add Button Example](path/to/add_button_example.png)
 
-## Credits
+### Welcome Message
 
-- **Bot Coder**: boda3350
-- **GitHub Repository**: [Your GitHub Repository](https://github.com/your-repo-url)
-- **Discord Server**: [Join Us](https://discord.gg/DzjuTABN6E)
+![Welcome Message Example](path/to/welcome_message_example.png)
+
+## Code Explanation
+
+The bot is built using `discord.py` and includes various commands to set up and manage welcome messages. Here are the main components:
+
+- **Command Registration:** Regular and premium commands are registered and their statuses are tracked.
+- **Welcome Message:** When a new member joins, the bot sends a welcome message with the member's avatar and details.
+- **Invite Tracking:** The bot tracks who invited the new member and includes this information in the welcome message.
+- **Custom Buttons:** Server administrators can add custom buttons to the welcome message.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For any questions or feedback, join our [Discord Server](https://discord.gg/DzjuTABN6E).
