@@ -96,8 +96,8 @@ Manage buttons by selecting from a menu.
 <div style="text-align: center;">
   <img src="https://c.top4top.io/p_3144u8xvr1.png" alt="Custom Button" >
   <img src="https://f.top4top.io/p_3144qnexa1.png" alt="Custom Button" >
-  <img src="/" alt="Custom Button" >
-  <img src="https://i.top4top.io/p_3144rgl981.png" alt="Custom Button" >
+ً
+<img src="https://i.top4top.io/p_3144rgl981.png" alt="Custom Button" >
 </div>
 
 ### Welcome Message
