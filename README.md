@@ -67,30 +67,42 @@ Add a custom button to the welcome message.
 /add_button <label> <url> <emoji>
 ```
 
+### `/manage_buttons`
+
+Manage buttons by selecting from a menu.
+
 ## Example Usage
 
 ### Setting the Welcome Channel
 
 <div style="text-align: center;">
-  <img src="https://d.top4top.io/p_313894f7r2.png" alt="Welcome Channe" >
+  <img src="https://b.top4top.io/p_3144fdezp1.png" alt="Welcome Channe" >
 </div>
 
 ### Setting Roles
 
 <div style="text-align: center;">
-  <img src="https://e.top4top.io/p_3138rinq03.png" alt="Setting Roles" >
+  <img src="https://d.top4top.io/p_3144kwu381.png" alt="Setting Roles" >
 </div>
 
 ### Adding a Custom Button
 
 <div style="text-align: center;">
-  <img src="https://c.top4top.io/p_3138zbacr1.png" alt="Custom Button" >
+  <img src="https://f.top4top.io/p_3144dfmaf1.png" alt="Custom Button" >
+</div>
+
+### Manage buttons by selecting from a menu.
+
+<div style="text-align: center;">
+  <img src="https://c.top4top.io/p_3144u8xvr1.png" alt="Custom Button" >
+  <img src="https://f.top4top.io/p_3144qnexa1.png" alt="Custom Button" >
+  <img src="https://i.top4top.io/p_3144rgl981.png" alt="Custom Button" >
 </div>
 
 ### Welcome Message
 
 <div style="text-align: center;">
-  <img src="https://f.top4top.io/p_3138rbwzg4.png" alt="Welcome Message" >
+  <img src="https://j.top4top.io/p_3144hsumz1.png" alt="Welcome Message" >
 </div>
 
 ## Code Explanation
