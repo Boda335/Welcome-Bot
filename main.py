@@ -274,9 +274,6 @@ async def on_interaction(interaction: discord.Interaction):
                 modal = EditButtonModal(button_data)
                 await interaction.response.send_modal(modal)
 
-
-    
-
 @client.event
 async def on_member_join(member):
     guild_id = str(member.guild.id)
@@ -352,11 +349,14 @@ async def on_member_join(member):
                     await member.create_dm()
                 await member.dm_channel.send(embed=welcome_embed, file=image_url, view=view)
             except discord.Forbidden:
-                print(f"Couldn't send a DM to {member.name} with id {member.id}.")
+                print(f"Couldn't send a DM to {member.name} with id {member.id}. They might have DMs disabled or blocked the bot.")
+            except discord.HTTPException as e:
+                print(f"HTTPException occurred while sending a DM to {member.name} with id {member.id}: {e}")
 
     # تحديث بيانات الدعوات بعد الاستخدام
     guild_data[guild_id]['invites'] = {invite.code: invite.uses for invite in invites_after}
     save_json('guild_data.json', guild_data)
+
 
 @client.event
 async def on_invite_create(invite):
